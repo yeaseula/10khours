@@ -31,7 +31,7 @@ header .title-logo-box {
     max-width: 594px;
     aspect-ratio: 594 / 265;
     margin: auto;
-    background-image: url('/assets/section1-clock.png');
+    background-image: url('../assets/section1-clock.png');
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -164,7 +164,7 @@ section {
     display: block;
     width: 64px;
     height: 72px;
-    background-image: url('/assets/click-m.png');
+    background-image: url('../assets/click-m.png');
     background-size: cover;
 }
 
