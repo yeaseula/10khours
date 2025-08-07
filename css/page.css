@@ -191,6 +191,47 @@ footer > img {
     margin-top: 2rem;
 }
 
+/* modal */
+.modal-section {
+    display: none !important;
+    max-width: 800px;
+    width: 100%;
+    aspect-ratio: 800 / 816;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-section p:first-child {
+    line-height: 1.2;
+    font-size: 9.6rem;
+    font-weight: 500;
+    color: rgba(91, 35, 134, 1);
+}
+.modal-section p:nth-child(2) {
+    line-height: 1.2;
+    font-size: 3.6rem;
+    font-weight: 500;
+    color: rgba(91, 35, 134, 1);
+    margin-bottom: 4rem;
+}
+.modal-section img {
+    vertical-align: bottom;
+    margin-bottom: 6rem;
+}
+.modal-section .btn-training {
+    display: inline-block;
+}
+.modal-section .btn-training br {
+    display: none;
+}
+
 @media screen and (max-width:992px) {
 
     /* header */
@@ -308,5 +349,26 @@ footer > img {
     .footer-desc {
         font-size: 0.9rem;
         margin-top: 1.2rem;
+    }
+
+    /* modal */
+    .modal-section {
+        max-width: calc(100% - 30px);
+        aspect-ratio: 330 / 500;
+    }
+    .modal-section p:first-child {
+        font-size: 6.4rem;
+    }
+    .modal-section p:nth-child(2) {
+        line-height: 1.2;
+        font-size: 3.6rem;
+        margin-bottom: 2.4rem;
+    }
+    .modal-section img {
+        width: 100%;
+        margin-bottom: 2.4rem;
+    }
+    .modal-section .btn-training br {
+        display: block;
     }
 }
