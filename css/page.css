@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    background-color: rgba(91, 35, 134, 1);
+background-color: rgba(91, 35, 134, 1);
 }
 
 .ally-hidden {
@@ -13,176 +13,294 @@ body {
     overflow: hidden;
     padding: 0;
     position: absolute;
- }
+}
 
 
- /* header */
+/* header */
+header {
+    max-width: 800px;
+    margin: 120px auto 0;
+}
+
+header .title-logo-box {
+    max-width: 594px;
+    aspect-ratio: 594 / 265;
+    margin: auto;
+    background-image: url('/assets/section1-clock.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .title-logo-box > img {
+    max-width: 100%;
+}
+
+/* main section */
+main {
+    margin:52px 0 120px 0;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "GmarketSansMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
+}
+
+.section1 .wise-saying {
+    font-size: 3.6rem;
+    margin-bottom: 80px;
+    color: rgba(245, 223, 77, 1);
+}
+
+.section1 .wise-desc-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section1 .wise-desc-box img {
+    max-width: 36px;
+}
+
+.section1 .wise-desc-box p {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.section1 .wise-desc-box .strong {
+    font-size: 2.4rem;
+}
+
+/* section2 */
+.section2 {
+    margin-top: 100px;
+}
+
+/* common layout style */
+.section2 .flexstyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.section2 .flex-depth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+.section2 .flex-depth.narrow {
+    gap: 1.2rem;
+}
+
+.section2 .my-job-result,
+.section2 .my-time-result {
+    font-size: 7.2rem;
+}
+
+/* input */
+.section2 input[type="text"] {
+    width: 228px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    font-size: 2.4rem;
+    text-align: center;
+    padding-top: 6px;
+    font-family: "GmarketSansMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
+}
+
+.section2 input[type="text"]::placeholder {
+    color: rgba(186, 188, 190, 1);
+}
+
+/* button, a common style */
+[class|='btn'] {
+    line-height: 1 !important;
+    padding: 21px 50px 17px 50px;
+    background-color: rgba(245, 223, 77, 1);
+    border: unset;
+    border-radius: 12px;
+    font-size: 2.4rem;
+    color: rgba(91, 35, 134, 1);
+    font-family: "GmarketSansBold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.section2 .btn-timecalc {
+    position: relative;
+    margin: 120px 0 142px 0;
+}
+
+.section2 .btn-timecalc br {
+    display: none;
+}
+
+.section2 .btn-timecalc::after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: -71px;
+    display: block;
+    width: 64px;
+    height: 72px;
+    background-image: url('/assets/click-m.png');
+    background-size: cover;
+}
+
+/* section3 */
+.section3 {
+    margin-top: 120px;
+}
+.section3 .link-btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+.section3 .link-btn-box .btn-share {
+    display: inline-block;
+    background-color: #fff;
+    color: rgba(91, 35, 134, 1);
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    margin-bottom: 106px;
+}
+footer > img {
+    max-width: 168px;
+}
+.footer-desc {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:992px) {
     header {
-        max-width: 800px;
-        margin: 120px auto 0;
+        max-width: 100%;
+        margin: 40px auto 0;
     }
 
     header .title-logo-box {
-        max-width: 594px;
-        aspect-ratio: 594 / 265;
-        margin: auto;
-        background-image: url('/assets/section1-clock.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    header .title-logo-box > img {
-        max-width: 100%;
+        aspect-ratio: 278 / 130;
+        width: calc(100% - 82px);
+        background-size: contain;
+        max-width: 278px;
     }
 
-    /* main section */
     main {
-        margin:52px 0 120px 0;
+        margin: 32px 0 60px 0;
     }
 
     section {
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: center;
-        font-family: "GmarketSansMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
+        max-width: 100%;
+        padding: 0 15px;
     }
 
     .section1 .wise-saying {
-        font-size: 3.6rem;
-        margin-bottom: 80px;
-        color: rgba(245, 223, 77, 1);
+        font-size: 2.2rem;
+        margin-bottom: 3.2rem;
     }
-
     .section1 .wise-desc-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+        gap: 0;
     }
-
     .section1 .wise-desc-box img {
-        max-width: 36px;
+        max-width: 20px;
     }
-
     .section1 .wise-desc-box p {
-        font-size: 1.8rem;
-        color: #fff;
+        font-size: 1.4rem;
     }
-
     .section1 .wise-desc-box .strong {
-        font-size: 2.4rem;
+        font-size: 1.4rem;
     }
 
     /* section2 */
     .section2 {
-        margin-top: 100px;
+        margin-top: 60px;
     }
-
-    /* common layout style */
     .section2 .flexstyle {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    .section2 .flex-depth {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        font-size: 2.4rem;
-        color: #fff;
-    }
-
-    .section2 .flex-depth.narrow {
         gap: 1.2rem;
     }
-
-    .section2 .my-job-result,
-    .section2 .my-time-result {
-        font-size: 7.2rem;
+    .section2 .flex-depth {
+        gap: 1.2rem 0.8rem;
+        font-size: 1.4rem;
     }
-
-    /* input */
+    .section2 .flex-depth.mobile-type {
+        flex-wrap: wrap;
+    }
+    .section2 .flex-depth.mobile-type span:first-child {
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+    .section2 .flex-depth.narrow {
+        font-size: 1.2rem;
+    }
     .section2 input[type="text"] {
-        width: 228px;
-        height: 56px;
-        line-height: 56px;
-        border-radius: 8px;
-        background-color: #fff;
-        border: 1px solid #fff;
-        font-size: 2.4rem;
-        text-align: center;
-        padding-top: 6px;
-        font-family: "GmarketSansMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
-    }
-
-    .section2 input[type="text"]::placeholder {
-        color: rgba(186, 188, 190, 1);
-    }
-
-    /* button, a common style */
-    [class|='btn'] {
-        line-height: 1 !important;
-        padding: 21px 50px 17px 50px;
-        background-color: rgba(245, 223, 77, 1);
-        border: unset;
-        border-radius: 12px;
-        font-size: 2.4rem;
-        color: rgba(91, 35, 134, 1);
-        font-family: "GmarketSansBold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
-        cursor: pointer;
-        box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.15);
+        width: 156px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 1.4rem;
+        padding-top: 5px;
     }
 
     .section2 .btn-timecalc {
-        position: relative;
-        margin: 120px 0 142px 0;
+        margin: 80px 0 68px 0;
+        padding: 22px 38px 17px 38px;
+    }
+    .section2 .btn-timecalc br {
+        display: block;
+    }
+    .section2 .btn-timecalc::after {
+        top: 40px;
+        right: -47px;
+        width: 43px;
+        height: 48px;
     }
 
-    .section2 .btn-timecalc::after {
-        content: '';
-        position: absolute;
-        top: 14px;
-        right: -71px;
-        display: block;
-        width: 64px;
-        height: 72px;
-        background-image: url('/assets/click-m.png');
-        background-size: cover;
+    [class|='btn'] {
+        line-height: 1.5 !important;
+        font-size: 1.4rem;
+        padding: 14px 24px 12px 24px;
+    }
+
+    #time-result-box {
+        gap: 1.6rem;
+    }
+    .section2 .my-job-result,
+    .section2 .my-time-result {
+        font-size: 2.4rem;
     }
 
     /* section3 */
     .section3 {
-        margin-top: 120px;
+        margin-top: 52px;
     }
-    .section3 .link-btn-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.2rem;
-    }
-    .section3 .link-btn-box .btn-share {
-        display: inline-block;
-        background-color: #fff;
-        color: rgba(91, 35, 134, 1);
-    }
-
-    /* footer */
 
     footer {
-        text-align: center;
-        margin-bottom: 106px;
+        margin-bottom: 48px;
     }
     footer > img {
-        max-width: 168px;
+        max-width: 125px;
     }
+
     .footer-desc {
-        color: #fff;
-        font-size: 1.2rem;
-        margin-top: 2rem;
+        font-size: 0.9rem;
+        margin-top: 1.2rem;
     }
+}
