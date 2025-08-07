@@ -31,12 +31,12 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	font-size: 1.6rem;
-	line-height: 1;
+	line-height: 1.6;
 }
 ol, ul {
 	list-style: none;
 }
-p {line-height: normal;}
+
 a {text-decoration: unset;}
 blockquote, q {
 	quotes: none;

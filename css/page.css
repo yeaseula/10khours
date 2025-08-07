@@ -33,7 +33,7 @@ header .title-logo-box {
     justify-content: center;
     align-items: center;
 }
-header .title-logo-box > img {
+header .title-logo-box img {
     max-width: 100%;
 }
 
@@ -49,6 +49,7 @@ section {
     font-family: "GmarketSansMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
 }
 
+/* section1 */
 .section1 .wise-saying {
     font-size: 3.6rem;
     margin-bottom: 80px;
@@ -105,6 +106,7 @@ section {
 .section2 .my-job-result,
 .section2 .my-time-result {
     font-size: 7.2rem;
+    line-height: 1;
 }
 
 /* input */
@@ -127,8 +129,7 @@ section {
 
 /* button, a common style */
 [class|='btn'] {
-    line-height: 1 !important;
-    padding: 21px 50px 17px 50px;
+    padding: 14px 50px 14px 50px;
     background-color: rgba(245, 223, 77, 1);
     border: unset;
     border-radius: 12px;
@@ -177,7 +178,6 @@ section {
 }
 
 /* footer */
-
 footer {
     text-align: center;
     margin-bottom: 106px;
@@ -192,6 +192,8 @@ footer > img {
 }
 
 @media screen and (max-width:992px) {
+
+    /* header */
     header {
         max-width: 100%;
         margin: 40px auto 0;
@@ -213,6 +215,7 @@ footer > img {
         padding: 0 15px;
     }
 
+    /* section1 */
     .section1 .wise-saying {
         font-size: 2.2rem;
         margin-bottom: 3.2rem;
@@ -251,12 +254,20 @@ footer > img {
     .section2 .flex-depth.narrow {
         font-size: 1.2rem;
     }
+
+    /* input */
     .section2 input[type="text"] {
         width: 156px;
         height: 38px;
         line-height: 38px;
         font-size: 1.4rem;
         padding-top: 5px;
+    }
+
+    /* button, a common style */
+    [class|='btn'] {
+        font-size: 1.4rem;
+        padding: 14px 24px 12px 24px;
     }
 
     .section2 .btn-timecalc {
@@ -273,12 +284,6 @@ footer > img {
         height: 48px;
     }
 
-    [class|='btn'] {
-        line-height: 1.5 !important;
-        font-size: 1.4rem;
-        padding: 14px 24px 12px 24px;
-    }
-
     #time-result-box {
         gap: 1.6rem;
     }
@@ -292,6 +297,7 @@ footer > img {
         margin-top: 52px;
     }
 
+    /* footer */
     footer {
         margin-bottom: 48px;
     }
