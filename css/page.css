@@ -181,6 +181,7 @@ section {
 .section3 .link-btn-box .btn-share {
     display: inline-block;
     background-color: #fff;
+    padding: 15px 50px 11px 50px;
     color: var(--main-color);
 }
 
