@@ -46,19 +46,19 @@ section {
     font-family: "GmarketSansMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
 }
 
-/* section1 */
-.section1 .wise-saying {
+/* section1 - about-section */
+.about-section .wise-saying {
     font-size: 3.6rem;
     margin-bottom: 80px;
     color: var(--point-color);
 }
-.section1 .wise-desc-box {
+.about-section .wise-desc-box {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.section1 .wise-desc-box .quote-icon-box {
+.about-section .wise-desc-box .quote-icon-box {
     display: inline-block;
     width: 36px;
     height: 32px;
@@ -69,28 +69,29 @@ section {
 .quote-icon-box.right {
     background: url('../assets/quote-right.svg') no-repeat center / cover;
 }
-.section1 .wise-desc-box p {
+.about-section .wise-desc-box p {
     font-size: 1.8rem;
     color: #fff;
 }
-.section1 .wise-desc-box .strong {
+.about-section .wise-desc-box .strong {
     font-size: 2.4rem;
 }
 
-/* section2 */
-.section2 {
+/* section2 - calculation-section*/
+.calculation-section {
     margin-top: 100px;
 }
 
 /* common layout style */
-.section2 .flexstyle {
+.calculation-section .flexstyle {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-.section2 .flex-depth {
+.calculation-section .flex-depth {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,18 +99,21 @@ section {
     font-size: 2.4rem;
     color: #fff;
 }
-.section2 .flex-depth.narrow {
+.calculation-section .flex-depth.narrow {
     gap: 12px;
 }
-.section2 .my-job-result,
-.section2 .my-time-result {
+.calculation-section .my-job-result {
+    flex-basis: 347px;
+}
+.calculation-section .my-job-result,
+.calculation-section .my-time-result {
     font-size: 7.2rem;
     line-height: 1;
 }
 
 /* input style*/
-.section2 input[type="text"],
-.section2 input[type="number"] {
+.calculation-section input[type="text"],
+.calculation-section input[type="number"] {
     width: 228px;
     height: 56px;
     line-height: 56px;
@@ -121,8 +125,8 @@ section {
     padding-top: 6px;
     font-family: "GmarketSansMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
 }
-.section2 input[type="text"]::placeholder,
-.section2 input[type="number"]::placeholder {
+.calculation-section input[type="text"]::placeholder,
+.calculation-section input[type="number"]::placeholder {
     color: rgba(186, 188, 190, 1);
 }
 
@@ -146,14 +150,14 @@ section {
     top: 3px;
 }
 
-.section2 .btn-timecalc {
+.calculation-section .btn-timecalc {
     position: relative;
     margin: 120px 0 142px 0;
 }
-.section2 .btn-timecalc br {
+.calculation-section .btn-timecalc br {
     display: none;
 }
-.section2 .btn-timecalc::after {
+.calculation-section .btn-timecalc::after {
     content: '';
     position: absolute;
     top: 14px;
@@ -165,17 +169,17 @@ section {
     background-size: cover;
 }
 
-/* section3 */
-.section3 {
+/* section3 - link-btn-section*/
+.link-btn-section {
     margin-top: 120px;
 }
-.section3 .link-btn-box {
+.link-btn-section .link-btn-box {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
 }
-.section3 .link-btn-box .btn-share {
+.link-btn-section .link-btn-box .btn-share {
     display: inline-block;
     background-color: #fff;
     color: var(--main-color);
@@ -197,7 +201,7 @@ footer > img {
 }
 
 /* modal */
-.modal-section {
+.link-modal {
     display: none !important;
     max-width: 800px;
     width: 100%;
@@ -212,25 +216,26 @@ footer > img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-.modal-section p:first-child {
+.link-modal p:first-child {
     line-height: 1.2;
     font-size: 9.6rem;
     font-weight: 500;
     color: var(--main-color);
 }
-.modal-section p:nth-child(2) {
+.link-modal p:nth-child(2) {
     line-height: 1.2;
     font-size: 3.6rem;
     font-weight: 500;
     color: var(--main-color);
     margin-bottom: 40px;
 }
-.modal-section img {
+.link-modal img {
     vertical-align: bottom;
     margin-bottom: 60px;
 }
-.modal-section .btn-training br {
+.link-modal .btn-training br {
     display: none;
 }
 
@@ -241,10 +246,9 @@ footer > img {
         margin: 40px auto 0;
     }
     header .title-logo-box {
+        max-width: 100%;
         aspect-ratio: 278 / 130;
-        width: calc(100% - 82px);
         background-size: contain;
-        max-width: 278px;
     }
     main {
         margin: 32px 0 60px 0;
@@ -254,50 +258,53 @@ footer > img {
         padding: 0 15px;
     }
 
-    /* section1 */
-    .section1 .wise-saying {
+    /* section1 - about-section */
+    .about-section .wise-saying {
         font-size: 2.2rem;
         margin-bottom: 32px;
     }
-    .section1 .wise-desc-box {
+    .about-section .wise-desc-box {
         gap: 0;
     }
-    .section1 .wise-desc-box .quote-icon-box {
+    .about-section .wise-desc-box .quote-icon-box {
         width: 20px;
         height: 18px;
     }
-    .section1 .wise-desc-box p {
+    .about-section .wise-desc-box p {
         font-size: 1.4rem;
     }
-    .section1 .wise-desc-box .strong {
+    .about-section .wise-desc-box .strong {
         font-size: 1.4rem;
     }
 
-    /* section2 */
-    .section2 {
+    /* section2 -calculation-section */
+    .calculation-section {
         margin-top: 60px;
     }
-    .section2 .flexstyle {
+    .calculation-section .flexstyle {
         gap: 12px;
     }
-    .section2 .flex-depth {
+    .calculation-section .flex-depth {
         gap: 12px 8px;
         font-size: 1.4rem;
     }
-    .section2 .flex-depth.mobile-type {
+    .calculation-section .my-job-result {
+        flex-basis: 116px;
+    }
+    .calculation-section .flex-depth.mobile-type {
         flex-wrap: wrap;
     }
-    .section2 .flex-depth.mobile-type span:first-child {
+    .calculation-section .flex-depth.mobile-type span:first-child {
         flex-grow: 1;
         flex-basis: 100%;
     }
-    .section2 .flex-depth.narrow {
+    .calculation-section .flex-depth.narrow {
         font-size: 1.2rem;
     }
 
     /* input */
-    .section2 input[type="text"],
-    .section2 input[type="number"] {
+    .calculation-section input[type="text"],
+    .calculation-section input[type="number"] {
         width: 156px;
         height: 38px;
         line-height: 38px;
@@ -312,16 +319,16 @@ footer > img {
         padding: 10px 24px;
     }
 
-    .section2 .btn-timecalc {
+    .calculation-section .btn-timecalc {
         height: auto;
         line-height: inherit;
         margin: 80px 0 68px 0;
         padding: 17px 38px 12px 38px;
     }
-    .section2 .btn-timecalc br {
+    .calculation-section .btn-timecalc br {
         display: block;
     }
-    .section2 .btn-timecalc::after {
+    .calculation-section .btn-timecalc::after {
         top: 40px;
         right: -47px;
         width: 43px;
@@ -330,13 +337,13 @@ footer > img {
     #time-result-box {
         gap: 16px;
     }
-    .section2 .my-job-result,
-    .section2 .my-time-result {
+    .calculation-section .my-job-result,
+    .calculation-section .my-time-result {
         font-size: 2.4rem;
     }
 
-    /* section3 */
-    .section3 {
+    /* section3 - link-btn-section */
+    .link-btn-section {
         margin-top: 52px;
     }
 
@@ -353,26 +360,26 @@ footer > img {
     }
 
     /* modal */
-    .modal-section {
-        max-width: calc(100% - 30px);
+    .link-modal {
+        width: min(330px,calc(100vw - 15px));
         aspect-ratio: 330 / 500;
     }
-    .modal-section p:first-child {
+    .link-modal p:first-child {
         font-size: 6.4rem;
     }
-    .modal-section p:nth-child(2) {
+    .link-modal p:nth-child(2) {
         line-height: 1.2;
         font-size: 3.6rem;
         margin-bottom: 24px;
     }
-    .modal-section img {
+    .link-modal img {
         display: block;
         margin: 0 auto 24px;
     }
-    .modal-section .btn-training {
+    .link-modal .btn-training {
         padding: 13px 24px;
     }
-    .modal-section .btn-training br {
+    .link-modal .btn-training br {
         display: block;
     }
 }
