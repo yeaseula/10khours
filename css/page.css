@@ -95,6 +95,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap:20px;
     font-size: 2.4rem;
     color: #fff;
@@ -202,10 +203,11 @@ footer > img {
 
 /* modal */
 .link-modal {
-    display: none !important;
+    /* display: none !important; */
     max-width: 800px;
     width: 100%;
     aspect-ratio: 800 / 816;
+    padding: 80px 10px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -213,9 +215,6 @@ footer > img {
     background-color: #fff;
     box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 .link-modal p:first-child {
@@ -240,6 +239,36 @@ footer > img {
 }
 
 @media screen and (max-width:992px) {
+    /* modal */
+    .link-modal {
+        width: min(330px,calc(100vw - 15px));
+        aspect-ratio: 330 / 500;
+        padding: 40px 45px;
+    }
+    .link-modal p:first-child {
+        font-size: 6.4rem;
+    }
+    .link-modal p:nth-child(2) {
+        line-height: 1.2;
+        font-size: 3.6rem;
+        margin-bottom: 17px;
+    }
+    .heart-text { display: none; }
+    .link-modal img {
+        display: block;
+        margin: 0 auto 24px;
+    }
+    .link-modal .btn-training {
+        min-height: 46px;
+        padding: 13px 24px;
+        font-size: 1.4rem;
+    }
+    .link-modal .btn-training br {
+        display: block;
+    }
+}
+
+@media screen and (max-width:660px) {
     /* header */
     header {
         max-width: 100%;
@@ -357,29 +386,5 @@ footer > img {
     .footer-desc {
         font-size: 0.9rem;
         margin-top: 12px;
-    }
-
-    /* modal */
-    .link-modal {
-        width: min(330px,calc(100vw - 15px));
-        aspect-ratio: 330 / 500;
-    }
-    .link-modal p:first-child {
-        font-size: 6.4rem;
-    }
-    .link-modal p:nth-child(2) {
-        line-height: 1.2;
-        font-size: 3.6rem;
-        margin-bottom: 24px;
-    }
-    .link-modal img {
-        display: block;
-        margin: 0 auto 24px;
-    }
-    .link-modal .btn-training {
-        padding: 13px 24px;
-    }
-    .link-modal .btn-training br {
-        display: block;
     }
 }
