@@ -203,7 +203,7 @@ footer > img {
 
 /* modal */
 .link-modal {
-    /* display: none !important; */
+    display: none !important;
     max-width: 800px;
     width: 100%;
     aspect-ratio: 800 / 816;
