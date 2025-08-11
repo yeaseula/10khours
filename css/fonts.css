@@ -1,7 +1,8 @@
 @font-face {
     font-family: "OTEnjoystoriesBA";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
-    format("woff");
+    src: url("../fonts/OTEnjoystoriesBA.woff2") format("woff2"),
+    url("../fonts/OTEnjoystoriesBA.woff") format("woff"),
+    url("../fonts/OTEnjoystoriesBA.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +10,9 @@
 
 @font-face {
     font-family: "GmarketSansBold";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
-    format("woff");
+    src: url("../fonts/GmarketSansBold.woff2") format("woff2"),
+    url("../fonts/GmarketSansBold.woff") format("woff"),
+    url("../fonts/GmarketSansBold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -18,8 +20,9 @@
 
 @font-face {
     font-family: "GmarketSansMedium";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
+    src: url("../fonts/GmarketSansMedium.woff2") format("woff2"),
+    url("../fonts/GmarketSansMedium.woff") format("woff"),
+    url("../fonts/GmarketSansMedium.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -36,16 +39,7 @@
         format("opentype");
     font-display: swap;
 }
-
-.ff-joy {
-    font-family: "OTEnjoystoriesBA", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
-}
-.ff-gms-b {
-    font-family: "GmarketSansBold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
-}
-.ff-gms-m {
-    font-family: "GmarketSansMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
-}
-.ff-ntsk {
-    font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
-}
+section {font-family: 'GmarketSansMedium', system-ui, sans-serif; }
+.ff-joy { font-family: "OTEnjoystoriesBA", system-ui, sans-serif; }
+.ff-gms-b { font-family: "GmarketSansBold", system-ui, sans-serif; }
+.ff-ntsk { font-family: "Noto Sans KR", system-ui, sans-serif; }
