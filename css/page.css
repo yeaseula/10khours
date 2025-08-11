@@ -34,6 +34,19 @@ header .title-logo-box {
     justify-content: center;
     align-items: center;
 }
+header .title-logo-box img {
+    display: inline-block;
+    animation: Movinglogo 0.4s linear 0.5s 1 normal forwards;
+}
+
+@keyframes Movinglogo {
+    0%   { transform: rotate(0deg); }
+    20%  { transform: rotate(-8deg); }
+    40%  { transform: rotate(8deg); }
+    60%  { transform: rotate(-6deg); }
+    80%  { transform: rotate(6deg); }
+    100% { transform: rotate(0deg); }
+}
 
 /* main section */
 main {
