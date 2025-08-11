@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/page.css">
 
+    <!--my javascript-->
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -84,8 +86,8 @@
         <section class="link-btn-section">
             <h2 class="ally-hidden">훈련하러 가기와 공유 버튼</h2>
             <div class="link-btn-box">
-                <button type="button" class="btn-training"><span>훈련하러 가기 GO! GO!</span></button>
-                <a href="#" class="btn-share anchor"><span>공유하기</span></a>
+                <button type="button" class="btn-training" id="modal-open-btn"><span>훈련하러 가기 GO! GO!</span></button>
+                <a href="#" class="btn-share"><span>공유하기</span></a>
             </div>
         </section>
     </main>
@@ -110,7 +112,7 @@
             ./assets/licat-360.png 360w"
             sizes="(min-width:992px) 438px, 240px"
             src="./assets/licat-438.png" alt="라이캣 사자 캐릭터">
-            <a href="#" class="btn-training anchor"><span>종료하고 진짜<br> 훈련하러 가기 GO!GO!</span></a>
+            <button type="button" class="btn-training" id="modal-close-btn"><span>종료하고 진짜<br> 훈련하러 가기 GO!GO!</span></button>
         </div>
     </aside>
   </body>
