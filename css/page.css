@@ -43,7 +43,7 @@ section {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    font-family: "GmarketSansMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
+    font-family: "GmarketSansMedium", system-ui, sans-serif;
 }
 
 /* section1 - about-section */
@@ -133,19 +133,23 @@ section {
 
 /* button, a common style */
 [class|='btn'] {
-    display: inline-block;
-    padding: 13px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 64px;
+    height: 64px;
+    padding: 0 50px;
     background-color: var(--point-color);
     border: unset;
     border-radius: 12px;
     font-size: 2.4rem;
+    font-family: "GmarketSansBold", system-ui, sans-serif;
     color: var(--main-color);
-    font-family: "GmarketSansBold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", system-ui, sans-serif;
     cursor: pointer;
     box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
 /* a tag */
+[class|='btn'] > span,
 .anchor > span {
     position: relative;
     top: 3px;
@@ -153,7 +157,7 @@ section {
 
 .calculation-section .btn-timecalc {
     position: relative;
-    margin: 120px 0 142px 0;
+    margin: 120px auto 142px;
 }
 .calculation-section .btn-timecalc br {
     display: none;
@@ -168,6 +172,10 @@ section {
     height: 72px;
     background-image: url('../assets/click-m.png');
     background-size: cover;
+    transition: all 0.2s;
+}
+.calculation-section .btn-timecalc:hover::after {
+    transform: scale(1.1);
 }
 
 /* section3 - link-btn-section*/
@@ -181,7 +189,6 @@ section {
     gap: 12px;
 }
 .link-btn-section .link-btn-box .btn-share {
-    display: inline-block;
     background-color: #fff;
     color: var(--main-color);
 }
@@ -234,6 +241,10 @@ footer > img {
     vertical-align: bottom;
     margin-bottom: 60px;
 }
+.link-modal .btn-training {
+    width: fit-content;
+    margin: auto;
+}
 .link-modal .btn-training br {
     display: none;
 }
@@ -260,6 +271,7 @@ footer > img {
     }
     .link-modal .btn-training {
         min-height: 46px;
+        height: 46px;
         padding: 13px 24px;
         font-size: 1.4rem;
     }
@@ -344,6 +356,7 @@ footer > img {
     /* button, a common style */
     [class|='btn'] {
         min-height: 46px;
+        height: 46px;
         font-size: 1.4rem;
         padding: 10px 24px;
     }
@@ -351,8 +364,8 @@ footer > img {
     .calculation-section .btn-timecalc {
         height: auto;
         line-height: inherit;
-        margin: 80px 0 68px 0;
-        padding: 17px 38px 12px 38px;
+        margin: 80px auto 68px;
+        padding: 14px 38px;
     }
     .calculation-section .btn-timecalc br {
         display: block;
