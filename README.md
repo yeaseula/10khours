@@ -153,8 +153,17 @@ body {
 
 #### 레이아웃 시프트
 - 외부 CDN 폰트 로딩 지연 문제로 로컬 폰트 파일 저장 및 불러오기 방식 전환
+- 호환성이 높은 확장자 순서대로 폴백 처리
+- FOIT 방지를 위해 font-display: swap; 속성 추가
 
 <img width="500" height="240" alt="image" src="https://github.com/user-attachments/assets/de577fc7-efa4-414c-9bc2-d6b767086bf1" />
+
+***
+
+### 앞으로의 계획
+- Javascript 이용, 훈련시간 계산 기능 추가
+- 훈련하러 가기 버튼 링크 연결
+- 375px 이하에서도 레이아웃 유지하는 미디어쿼리 잡기
 
 
 ***
@@ -178,6 +187,7 @@ header .title-logo-box img {
 }
 
 ```
+
 
 
 
