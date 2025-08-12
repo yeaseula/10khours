@@ -81,7 +81,14 @@
 #### SEO
 - meta 태그를 활용해 사이트에 대한 부가 설명 추가
 - 파비콘, 대표이미지 설정 -> 완성된 느낌, 유저 유입률 상승 기대
-
+```html
+<meta name="description" content="1만 시간의 법칙을 기반으로 전문가가 되기 위해 필요한 시간을 계산해보세요.">
+<meta property="og:title" content="1만 시간의 법칙 - 훈련 시간 계산기">
+<meta property="og:description" content="매일 훈련할 시간만 입력하면 전문가까지 며칠 남았는지 계산해드립니다!">
+<meta property="og:image" content="https://yeaseula.github.io/10khours/assets/og-image.jpg">
+<meta property="og:url" content="https://yeaseula.github.io/10khours">
+<meta property="og:type" content="website">
+```
 <img width="480" height="390" alt="image" src="https://github.com/user-attachments/assets/83286fde-2d75-4bf2-95a4-c70119d6294b" />
 
   
@@ -145,6 +152,7 @@ header .title-logo-box img {
 }
 
 ```
+
 
 
 
