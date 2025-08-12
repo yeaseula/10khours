@@ -163,8 +163,9 @@ section {
 }
 /* a tag */
 [class|='btn'] > span {
-    position: relative;
-    top: 0px;
+    /* position: relative;
+    top: 0px; */
+    text-box-trim: trim-end;
 }
 
 .calculation-section .btn-timecalc {
