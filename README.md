@@ -95,9 +95,35 @@
 #### CSS & 성능
 - 중복과 공백을 줄이고 변수화하여 코드 효율성 및 성능 극대화
 - 주요 폰트 스타일은 CSS 변수로 관리해 일괄 변경 가능하도록 설계
+```css
+:root {
+    --main-color : rgba(91, 35, 134, 1);
+    --point-color : rgba(245, 223, 77, 1);
+}
+body {
+    background-color: var(--main-color)
+}
+```
 - 폰트는 CDN 대신 로컬에 저장해 로딩 속도와 레이아웃 시프트 최소화
 - 버튼 및 flex 스타일 컴포넌트화로 재사용성 향상
-
+```css
+[class|='btn'] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 64px;
+    height: 64px;
+    padding: 0 50px;
+    background-color: var(--point-color);
+    border: unset;
+    border-radius: 12px;
+    font-size: 2.4rem;
+    font-family: "GmarketSansBold", system-ui, sans-serif;
+    color: var(--main-color);
+    cursor: pointer;
+    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+```
 #### UX 개선
 - 모바일 환경에서 편리한 입력을 위해 적절한 input 타입 지정
 - 클릭 가능한 요소에 cursor: pointer 적용
@@ -152,6 +178,7 @@ header .title-logo-box img {
 }
 
 ```
+
 
 
 
