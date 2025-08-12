@@ -5,15 +5,13 @@ window.addEventListener('DOMContentLoaded',()=>{
     const modalCloseBtn = $('#modal-close-btn');
     const LinkModal = $('.link-modal');
 
-    modalOpBtn.addEventListener('click',()=>{ModalControl();})
-    modalCloseBtn.addEventListener('click',()=>{ModalControl();})
+    modalOpBtn.addEventListener('click',()=>{
+        LinkModal.showModal();
+        LinkModal.setAttribute('aria-hidden', 'false');
+    })
+    modalCloseBtn.addEventListener('click',()=>{
+        LinkModal.close();
+        LinkModal.setAttribute('aria-hidden', 'true');
+    })
 
-    function ModalControl () {
-        let ClassHas = LinkModal.classList.contains('on');
-        if(ClassHas) {
-            $('.link-modal').classList.remove('on')
-        } else {
-            $('.link-modal').classList.add('on')
-        }
-    }
 })
