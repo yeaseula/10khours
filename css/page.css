@@ -225,9 +225,8 @@ footer > img {
     display: none;
     max-width: 800px;
     width: 100%;
-    max-height: 98vh;
-    overflow-y: scroll;
-    aspect-ratio: 800 / 816;
+    max-height: 97vh;
+    overflow-y: auto;
     padding: 80px 10px;
     position: fixed;
     top: 50%;
@@ -252,7 +251,7 @@ footer > img {
     font-size: 3.6rem;
     font-weight: 500;
     color: var(--main-color);
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 .link-modal img {
     vertical-align: bottom;
@@ -270,8 +269,8 @@ footer > img {
     /* modal */
     .link-modal {
         width: min(330px,calc(100vw - 15px));
-        aspect-ratio: 330 / 500;
         padding: 40px 45px;
+        overflow-y: initial;
     }
     .link-modal p:first-child {
         font-size: 6.4rem;
@@ -287,8 +286,8 @@ footer > img {
         margin: 0 auto 24px;
     }
     .link-modal .btn-training {
-        min-height: 46px;
-        height: 46px;
+        min-height: 72px;
+        height: 72px;
         padding: 13px 24px;
         font-size: 1.4rem;
     }
