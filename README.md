@@ -78,6 +78,13 @@
 - 의미 없는 이미지는 배경 이미지로 처리해 스크린리더 혼란 최소화
 - 버튼과 앵커 태그의 역할을 명확히 구분해 추후 JS 기능 적용 용이
 
+#### SEO
+- meta 태그를 활용해 사이트에 대한 부가 설명 추가
+- 파비콘, 대표이미지 설정 -> 완성된 느낌, 유저 유입률 상승 기대
+
+<img width="480" height="390" alt="image" src="https://github.com/user-attachments/assets/83286fde-2d75-4bf2-95a4-c70119d6294b" />
+
+  
 #### CSS & 성능
 - 중복과 공백을 줄이고 변수화하여 코드 효율성 및 성능 극대화
 - 주요 폰트 스타일은 CSS 변수로 관리해 일괄 변경 가능하도록 설계
@@ -100,11 +107,17 @@
 - height 직접 지정, 내부 텍스트 span 감싸기, flex 정렬과 position 조정으로 해결 -> 실패
 - font-face에 속성 추가해 문제 해결 -> 크롬, 사파리 크로스브라우징 확인 완료
 
+<img width="510" height="147" alt="image" src="https://github.com/user-attachments/assets/6c1381e0-e736-41b3-89fc-aa241e197c78" />
+
+
 #### 다양한 뷰포트 대응
 - PC, 태블릿, 모바일 각각에 맞춘 반응형 디자인을 구현하며 우선순위와 중복 CSS 관리에 주의
 
 #### 레이아웃 시프트
 - 외부 CDN 폰트 로딩 지연 문제로 로컬 폰트 파일 저장 및 불러오기 방식 전환
+
+<img width="500" height="240" alt="image" src="https://github.com/user-attachments/assets/de577fc7-efa4-414c-9bc2-d6b767086bf1" />
+
 
 ***
 
@@ -127,4 +140,5 @@ header .title-logo-box img {
 }
 
 ```
+
 
