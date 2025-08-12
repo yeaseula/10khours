@@ -164,7 +164,7 @@ section {
 /* a tag */
 [class|='btn'] > span {
     position: relative;
-    top: 3px;
+    top: 0px;
 }
 
 .calculation-section .btn-timecalc {
