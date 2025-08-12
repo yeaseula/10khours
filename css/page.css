@@ -163,8 +163,6 @@ section {
 }
 /* a tag */
 [class|='btn'] > span {
-    /* position: relative;
-    top: 0px; */
     text-box-trim: trim-end;
 }
 
@@ -375,11 +373,6 @@ footer > img {
         height: 46px;
         font-size: 1.4rem;
         padding: 10px 24px;
-    }
-    /* a tag */
-    [class|='btn'] > span {
-        position: relative;
-        top: 1.5px;
     }
 
     .calculation-section .btn-timecalc {
