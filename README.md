@@ -109,7 +109,7 @@
 
 <img width="510" height="147" alt="image" src="https://github.com/user-attachments/assets/6c1381e0-e736-41b3-89fc-aa241e197c78" />
 
-### 이미지 최적화 및 반응형처리
+#### 이미지 최적화 및 반응형처리
 - srcset과 sizes 속성을 활용해 다양한 해상도와 뷰포트 크기에 맞게 적절한 이미지가 선택되도록 구현
 - 본래 목적은 이미지 용량 최적화를 위해 뷰포트 width값에 따라 다른 사이즈의 이미지가 선택되도록 하는 것
 - 다만, 고해상도 디바이스에서는 작은 뷰포트라도 큰 이미지가 선택되는 경우가 있음을 발견
@@ -145,6 +145,7 @@ header .title-logo-box img {
 }
 
 ```
+
 
 
 
