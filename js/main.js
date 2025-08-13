@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     modalOpBtn.addEventListener('click',()=>{
         LinkModal.showModal();
         LinkModal.setAttribute('aria-hidden', 'false');
+        document.getElementById('modal-title').focus();
     })
     modalCloseBtn.addEventListener('click',()=>{
         LinkModal.close();
